@@ -1,0 +1,207 @@
+[debug] [2024-11-02T11:50:42.625Z] ----------------------------------------------------------------------
+[debug] [2024-11-02T11:50:42.627Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\celik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-11-02T11:50:42.627Z] CLI Version:   13.23.1
+[debug] [2024-11-02T11:50:42.628Z] Platform:      win32
+[debug] [2024-11-02T11:50:42.628Z] Node Version:  v18.18.0
+[debug] [2024-11-02T11:50:42.629Z] Time:          Sat Nov 02 2024 12:50:42 GMT+0100 (heure normale d’Europe centrale)
+[debug] [2024-11-02T11:50:42.629Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-02T11:50:42.715Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-02T11:50:42.716Z] > authorizing via signed-in user (jdukky@gmail.com)
+[info] i  emulators: Starting emulators: auth, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, hosting"}}
+[warn] !  hosting: The hosting emulator is configured but there is no hosting configuration. Have you run firebase init hosting? {"metadata":{"emulator":{"name":"hosting"},"message":"The hosting emulator is configured but there is no hosting configuration. Have you run \u001b[1mfirebase init hosting\u001b[22m?"}}
+[debug] [2024-11-02T11:50:42.728Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-02T11:50:42.728Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-02T11:50:42.728Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-02T11:50:42.732Z] [hub] writing locator at C:\Users\celik\AppData\Local\Temp\hub-next-js-firebase-60df9.json
+[info] i  ui: downloading ui-v1.14.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.14.0.zip..."}}
+[debug] [2024-11-02T11:50:47.295Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 
+[debug] [2024-11-02T11:50:47.522Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 200
+[debug] [2024-11-02T11:50:47.522Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip [stream]
+[debug] [2024-11-02T11:50:47.698Z] Data is 3615311
+[debug] [2024-11-02T11:50:47.698Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-02T11:50:47.698Z] [unzip] Processing entry: client\
+[debug] [2024-11-02T11:50:47.699Z] [unzip] mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\
+[debug] [2024-11-02T11:50:47.699Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2024-11-02T11:50:47.699Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2024-11-02T11:50:47.699Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.700Z] [unzip] Writing file: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\favicon-16x16.png
+[debug] [2024-11-02T11:50:47.700Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2024-11-02T11:50:47.700Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2024-11-02T11:50:47.701Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.701Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\safari-pinned-tab.svg
+[debug] [2024-11-02T11:50:47.704Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2024-11-02T11:50:47.704Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2024-11-02T11:50:47.705Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.705Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\favicon.ico
+[debug] [2024-11-02T11:50:47.706Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3071 bytes)
+[debug] [2024-11-02T11:50:47.706Z] [unzip] Processing entry: client\index.html
+[debug] [2024-11-02T11:50:47.706Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.706Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\index.html
+[debug] [2024-11-02T11:50:47.707Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2024-11-02T11:50:47.707Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2024-11-02T11:50:47.707Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.707Z] [unzip] Writing file: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-192x192.png
+[debug] [2024-11-02T11:50:47.708Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2024-11-02T11:50:47.708Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2024-11-02T11:50:47.708Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.708Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\apple-touch-icon.png
+[debug] [2024-11-02T11:50:47.709Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2024-11-02T11:50:47.709Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2024-11-02T11:50:47.709Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.709Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-512x512.png
+[debug] [2024-11-02T11:50:47.711Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2024-11-02T11:50:47.711Z] [unzip] Processing entry: client\manifest.json
+[debug] [2024-11-02T11:50:47.711Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.711Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\manifest.json
+[debug] [2024-11-02T11:50:47.712Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2024-11-02T11:50:47.712Z] [unzip] Processing entry: client\robots.txt
+[debug] [2024-11-02T11:50:47.712Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.712Z] [unzip] Writing file: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\robots.txt
+[debug] [2024-11-02T11:50:47.713Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2024-11-02T11:50:47.713Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2024-11-02T11:50:47.713Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.713Z] [unzip] Writing file: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\mstile-150x150.png
+[debug] [2024-11-02T11:50:47.713Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-02T11:50:47.713Z] [unzip] Processing entry: client\assets\
+[debug] [2024-11-02T11:50:47.713Z] [unzip] mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\
+[debug] [2024-11-02T11:50:47.714Z] [unzip] Entry: client/assets/index-ClZTY_JS.js.map (compressed_size=2328270 bytes, uncompressed_size=9947004 bytes)
+[debug] [2024-11-02T11:50:47.714Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js.map
+[debug] [2024-11-02T11:50:47.714Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-11-02T11:50:47.714Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js.map
+[debug] [2024-11-02T11:50:47.744Z] [unzip] Entry: client/assets/index-ClZTY_JS.js (compressed_size=567195 bytes, uncompressed_size=2035940 bytes)
+[debug] [2024-11-02T11:50:47.744Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js
+[debug] [2024-11-02T11:50:47.745Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-11-02T11:50:47.745Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js
+[debug] [2024-11-02T11:50:47.752Z] [unzip] Entry: client/assets/index-BdgySamB.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2024-11-02T11:50:47.752Z] [unzip] Processing entry: client\assets\index-BdgySamB.css
+[debug] [2024-11-02T11:50:47.752Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-11-02T11:50:47.752Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-BdgySamB.css
+[debug] [2024-11-02T11:50:47.754Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-02T11:50:47.754Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2024-11-02T11:50:47.754Z] [unzip] mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\
+[debug] [2024-11-02T11:50:47.754Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2024-11-02T11:50:47.754Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2024-11-02T11:50:47.754Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions
+[debug] [2024-11-02T11:50:47.754Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\default-extension.png
+[debug] [2024-11-02T11:50:47.755Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-02T11:50:47.755Z] [unzip] Processing entry: client\assets\img\
+[debug] [2024-11-02T11:50:47.755Z] [unzip] mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\
+[debug] [2024-11-02T11:50:47.755Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2024-11-02T11:50:47.755Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2024-11-02T11:50:47.755Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\img
+[debug] [2024-11-02T11:50:47.755Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\database.png
+[debug] [2024-11-02T11:50:47.756Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-02T11:50:47.756Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2024-11-02T11:50:47.756Z] [unzip] mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\
+[debug] [2024-11-02T11:50:47.756Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2024-11-02T11:50:47.756Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-11-02T11:50:47.756Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.757Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-11-02T11:50:47.757Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2024-11-02T11:50:47.757Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-11-02T11:50:47.757Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.758Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-11-02T11:50:47.758Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2024-11-02T11:50:47.758Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-11-02T11:50:47.758Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.758Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-11-02T11:50:47.759Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2024-11-02T11:50:47.759Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-11-02T11:50:47.759Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.759Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-11-02T11:50:47.760Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2024-11-02T11:50:47.760Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-11-02T11:50:47.760Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.760Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-11-02T11:50:47.761Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2024-11-02T11:50:47.761Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-11-02T11:50:47.761Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.761Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-11-02T11:50:47.762Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2024-11-02T11:50:47.762Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-11-02T11:50:47.762Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.762Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-11-02T11:50:47.763Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2024-11-02T11:50:47.763Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-11-02T11:50:47.763Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.763Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-11-02T11:50:47.763Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2024-11-02T11:50:47.763Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-11-02T11:50:47.763Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.764Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-11-02T11:50:47.764Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2024-11-02T11:50:47.764Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-11-02T11:50:47.764Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.765Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-11-02T11:50:47.765Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2024-11-02T11:50:47.765Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-11-02T11:50:47.766Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.766Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-11-02T11:50:47.766Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2024-11-02T11:50:47.766Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-11-02T11:50:47.766Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.767Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-11-02T11:50:47.767Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2024-11-02T11:50:47.767Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-11-02T11:50:47.767Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-11-02T11:50:47.768Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-11-02T11:50:47.768Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2024-11-02T11:50:47.768Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2024-11-02T11:50:47.768Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.769Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\browserconfig.xml
+[debug] [2024-11-02T11:50:47.769Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2024-11-02T11:50:47.769Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2024-11-02T11:50:47.769Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-11-02T11:50:47.770Z] [unzip] Writing file: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\client\favicon-32x32.png
+[debug] [2024-11-02T11:50:47.770Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-02T11:50:47.770Z] [unzip] Processing entry: server\
+[debug] [2024-11-02T11:50:47.770Z] [unzip] mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\server\
+[debug] [2024-11-02T11:50:47.770Z] [unzip] Entry: server/server.mjs.map (compressed_size=296496 bytes, uncompressed_size=1355667 bytes)
+[debug] [2024-11-02T11:50:47.770Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2024-11-02T11:50:47.770Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2024-11-02T11:50:47.771Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs.map
+[debug] [2024-11-02T11:50:47.775Z] [unzip] Entry: server/server.mjs (compressed_size=315701 bytes, uncompressed_size=1172682 bytes)
+[debug] [2024-11-02T11:50:47.775Z] [unzip] Processing entry: server\server.mjs
+[debug] [2024-11-02T11:50:47.775Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2024-11-02T11:50:47.776Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs
+[debug] [2024-11-02T11:50:47.779Z] [unzip] Entry: server/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-11-02T11:50:47.779Z] [unzip] Processing entry: server\assets\
+[debug] [2024-11-02T11:50:47.779Z] [unzip] mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\server\assets\
+[debug] [2024-11-02T11:50:47.779Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs.map (compressed_size=4791 bytes, uncompressed_size=17918 bytes)
+[debug] [2024-11-02T11:50:47.779Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2024-11-02T11:50:47.779Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2024-11-02T11:50:47.780Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2024-11-02T11:50:47.780Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs (compressed_size=2621 bytes, uncompressed_size=10390 bytes)
+[debug] [2024-11-02T11:50:47.780Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2024-11-02T11:50:47.780Z] [unzip] else mkdir: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2024-11-02T11:50:47.781Z] [unzip] deflating: C:\Users\celik\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2024-11-02T11:50:47.782Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-02T11:50:47.782Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-02T11:50:47.782Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\celik\\.cache\\firebase\\emulators\\ui-v1.14.0\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\celik\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.14.0\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-11-02T11:50:47.897Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-11-02T11:50:47.898Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[debug] [2024-11-02T11:50:48.000Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED ::1:40001. If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬──────────────────────────────────┬────────────────────────────┐
+│ Emulator       │ Host:Port                        │ View in Emulator UI        │
+├────────────────┼──────────────────────────────────┼────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099                   │ http://127.0.0.1:4000/auth │
+├────────────────┼──────────────────────────────────┼────────────────────────────┤
+│ Hosting        │ Failed to initialize (see above) │                            │
+└────────────────┴──────────────────────────────────┴────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  To verify the phone number +33699714469, use the code 793502. {"metadata":{"emulator":{"name":"auth"},"message":"To verify the phone number +33699714469, use the code 793502."}}
+[info] i  To verify the phone number +33674406493, use the code 082032. {"metadata":{"emulator":{"name":"auth"},"message":"To verify the phone number +33674406493, use the code 082032."}}
