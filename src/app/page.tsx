@@ -3,11 +3,11 @@
 import { useCallback, useEffect, useState, useTransition } from "react"
 import { useRouter } from "next/navigation"
 import { auth } from "@/firebase"
-import { 
-  PhoneAuthProvider, 
-  RecaptchaVerifier, 
+import {
+  PhoneAuthProvider,
+  RecaptchaVerifier,
   signInWithCredential,
-  ApplicationVerifier, 
+  ApplicationVerifier,
   ConfirmationResult,
   signInWithPhoneNumber
 } from "firebase/auth"
@@ -17,11 +17,11 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card"
-import { 
-  InputOTP, 
-  InputOTPSeparator, 
-  InputOTPGroup, 
-  InputOTPSlot 
+import {
+  InputOTP,
+  InputOTPSeparator,
+  InputOTPGroup,
+  InputOTPSlot
 } from "@/components/ui/input-otp"
 import { useToast } from "@/hooks/use-toast"
 
@@ -47,7 +47,7 @@ export default function Home() {
       'auth/invalid-verification-code': "Code incorrect",
       'auth/code-expired': "Code expiré"
     }
-    
+
     const message = errorMessages[error.code] || "Une erreur est survenue"
     toast({
       variant: "destructive",
@@ -155,7 +155,7 @@ export default function Home() {
   }, [otp, verifyOtp])
 
   useEffect(() => {
-    const timer = resendCountDown > 0 && 
+    const timer = resendCountDown > 0 &&
       setInterval(() => setResendCountDown(prev => prev - 1), 1000)
     return () => {
       if (timer) clearInterval(timer)
@@ -200,7 +200,7 @@ export default function Home() {
             </div>
           </CardContent>
 
-          <CardFooter>
+          <CardFooter className="flex flex-col gap-4">
             <Button
               type="submit"
               className="w-full"
@@ -217,23 +217,24 @@ export default function Home() {
                 "Envoyer le code"
               )}
             </Button>
+            {confirmationResult && (
+              <InputOTP maxLength={6} value={otp} onChange={(value) => setOtp(value)} containerClassName="justify-center">
+                <InputOTPGroup>
+                  <InputOTPSlot index={0} />
+                  <InputOTPSlot index={1} />
+                  <InputOTPSlot index={2} />
+                </InputOTPGroup>
+                <InputOTPSeparator />
+                <InputOTPGroup>
+                  <InputOTPSlot index={3} />
+                  <InputOTPSlot index={4} />
+                  <InputOTPSlot index={5} />
+                </InputOTPGroup>
+              </InputOTP>
+            )}
           </CardFooter>
         </form>
-        {confirmationResult && (
-          <InputOTP maxLength={6} value={otp} onChange={(value) => setOtp(value)}>
-            <InputOTPGroup>
-              <InputOTPSlot index={0} />
-              <InputOTPSlot index={1} />
-              <InputOTPSlot index={2} />
-            </InputOTPGroup>
-            <InputOTPSeparator />
-            <InputOTPGroup>
-              <InputOTPSlot index={3} />
-              <InputOTPSlot index={4} />
-              <InputOTPSlot index={5} />
-            </InputOTPGroup>
-          </InputOTP>
-        )}
+
 
         <CardFooter className="text-center text-sm text-muted-foreground">
           <p className="w-full">
